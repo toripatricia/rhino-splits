@@ -5,12 +5,12 @@ import {
   Navbar, Container, Nav,
 } from 'react-bootstrap';
 
-export default function NoAuthNavBar() {
+export default function NavBarAuth() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Link passHref href="/">
-          <Navbar.Brand>CHANGE ME</Navbar.Brand>
+          <Navbar.Brand>Rhino$plits</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
