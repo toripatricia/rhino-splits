@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "name": "Tori Franklin",
+      "username": "toripatricia",
+      "id": "mainuser"
+    },
+    {
+      "name": "Aiden Clark",
+      "username": "clark-aiden25",
+      "id": "ac1"
+    },
+    {
+      "name": "Abigail Lewis",
+      "username": "abbylew9895",
+      "id": "al2"
+    },
+    {
+      "name": " Amelia White",
+      "username": "awhite_17",
+      "id": "aw3"
+    },
+    {
+      "name": "Ava Williams",
+      "username": "avawilly-4eva",
+      "id": "aw4"
+    },
+    {
+      "name": "Benjamin Hall",
+      "username": "ben-hall-1776",
+      "id": "bh5"
+    }
+  ]
+}

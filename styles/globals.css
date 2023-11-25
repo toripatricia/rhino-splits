@@ -1,15 +1,13 @@
 @import 'bootstrap/dist/css/bootstrap.css';
 
-html,
-body {
+#__next {
   display: flex;
   justify-content: center;
   padding: 0;
   margin: 0;
-  max-width: 414px;
-  background-color: E5E1E1;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100vh;
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -17,10 +15,43 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+#app {
+  display: flex;
+  flex-direction: column;
+  max-width: 414px;
+  background-color: #e5e1e1;
 }
 
-body {
-  background-color: #000000;
+#bottom-rectangle {
+  background-color: #887777;
+  width: 100%;
+  height: 60px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+#bottom-nav {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#pay-request {
+  width: min-content;
+  border-radius: 100%;
+  padding: 1rem 1.75rem;
+  background-color: #4d3f3f;
+  border-color: #e5e1e1;
+  outline: none;
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  color: #e5e1e1;
+}
+
+.friend-container {
+  display: flex;
+  flex-direction: row;
 }
