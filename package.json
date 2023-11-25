@@ -1,10 +1,11 @@
 {
-  "name": "next-firebase-starter",
+  "name": "Rhino Splits",
   "private": true,
   "version": "1.0.0",
-  "author": "Trinity Christiana",
+  "author": "Tori Franklin",
   "scripts": {
     "dev": "next dev",
+    "api": "json-server --watch db.json --port 8080",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
