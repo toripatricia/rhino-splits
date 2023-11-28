@@ -1,10 +1,12 @@
 {
-  "users": [
+  "primary-user": [
     {
       "name": "Tori Franklin",
       "username": "toripatricia",
       "id": "mainuser"
-    },
+    }
+  ],
+  "users": [
     {
       "name": "Aiden Clark",
       "username": "clark-aiden25",

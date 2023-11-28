@@ -6,13 +6,15 @@ import '../styles/globals.css';
 
 function App({ Component, pageProps }) {
   return (
-    <div id="app">
-      <NavBar />
-      <div className="main-container">
-        <Component {...pageProps} />
+    <>
+      <div id="app">
+        <NavBar />
+        <div className="main-container">
+          <Component {...pageProps} />
+        </div>
+        <BottomNav />
       </div>
-      <BottomNav />
-    </div>
+    </>
   );
 }
 
