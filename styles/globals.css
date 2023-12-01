@@ -18,7 +18,7 @@ a {
 #app {
   display: flex;
   flex-direction: column;
-  width: 375px;
+  width: 414px;
   background-color: #e5e1e1;
 }
 
@@ -26,6 +26,10 @@ a {
   background-color: #887777;
   width: 100%;
   height: 60px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 25px;
+  padding-right: 27px;
 }
 
 .main-container {
@@ -58,4 +62,39 @@ a {
 .friend-container {
   display: flex;
   flex-direction: row;
+}
+
+#nav-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#main-photo {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#friend-button {
+  margin: 5px;
+  background-color: #5c7684;
+  border-color: #5c7684;
+}
+
+#history-button {
+  margin: 5px;
+  background-color: #5c7684;
+  border-color: #5c7684;
+}
+
+#request-button {
+  margin: 5px;
+  background-color: #5c7684;
+  border-color: #5c7684;
+}
+
+#settings-button {
+  margin: 5px;
+  background-color: #5c7684;
+  border-color: #5c7684;
 }
