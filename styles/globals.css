@@ -28,8 +28,8 @@ a {
   height: 60px;
   padding-bottom: 5px;
   padding-top: 5px;
-  padding-left: 25px;
-  padding-right: 27px;
+  padding-left: 35px;
+  padding-right: 40px;
 }
 
 .main-container {
@@ -43,7 +43,10 @@ a {
 }
 
 #top-nav {
+  display: flex;
+  justify-content: center;
   background-color: #887777;
+  max-height: 90px;
 }
 
 #pay-request {
@@ -57,6 +60,7 @@ a {
   border-width: 5px;
   border-style: solid;
   color: #e5e1e1;
+  font-size: 20px;
 }
 
 .friend-container {
@@ -97,4 +101,9 @@ a {
   margin: 5px;
   background-color: #5c7684;
   border-color: #5c7684;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
 }
