@@ -2,35 +2,93 @@
   "primary-user": [
     {
       "name": "Tori Franklin",
-      "username": "toripatricia",
+      "username": "@toripatricia",
       "id": "mainuser"
     }
   ],
   "users": [
     {
       "name": "Aiden Clark",
-      "username": "clark-aiden25",
+      "username": "@clark-aiden25",
       "id": "ac1"
     },
     {
       "name": "Abigail Lewis",
-      "username": "abbylew9895",
+      "username": "@abbylew9895",
       "id": "al2"
     },
     {
       "name": " Amelia White",
-      "username": "awhite_17",
+      "username": "@awhite_17",
       "id": "aw3"
     },
     {
       "name": "Ava Williams",
-      "username": "avawilly-4eva",
+      "username": "@avawilly-4eva",
       "id": "aw4"
     },
     {
       "name": "Benjamin Hall",
-      "username": "ben-hall-1776",
+      "username": "@ben-hall-1776",
       "id": "bh5"
+    }
+  ],
+
+  "payment-requests": [
+    {
+      "recipientId": "ac1",
+      "requesterId": "mainuser",
+      "amount": " $60.87",
+      "description": "wifi"
+    },
+    {
+      "recipientId": "mainuser",
+      "requesterId": "bh5",
+      "amount": " $60.87",
+      "description": "wifi"
+    },
+    {
+      "recipientId": "aw3",
+      "requesterId": "mainuser",
+      "amount": " $60.87",
+      "description": "wifi"
+    },
+    {
+      "recipientId": "mainuser",
+      "requesterId": "al2",
+      "amount": " $60.87",
+      "description": "wifi"
+    }
+  ],
+
+  "transactions": [
+    {
+      "payerId": "mainuser",
+      "payerName": "Tori Franklin",
+      "payerUsername": "@toripatricia",
+      "amount": "-$45.63",
+      "description": "bday dinner"
+    },
+    {
+      "payerId": "ac1",
+      "payerName": "Aiden Clark",
+      "payerUsername": "@clark-aiden25",
+      "amount": "+$50",
+      "description": "electric bill"
+    },
+    {
+      "payerId": "mainuser",
+      "payerName": "Tori Franklin",
+      "payerUsername": "@toripatricia",
+      "amount": "-$12",
+      "description": "coffee"
+    },
+    {
+      "payerId": "bh5",
+      "payerName": "Benjamin Hall",
+      "payerUsername": "@ben-hall-1776",
+      "amount": "35",
+      "description": "drinks"
     }
   ]
 }

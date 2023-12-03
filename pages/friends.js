@@ -22,7 +22,7 @@ export default function Friends() {
     getUsers();
   }, []);
 
-  if (isLoading) <Loading />;
+  if (isLoading) return <Loading />;
 
   return (
     <div>
