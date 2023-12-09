@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import userphoto from '../assets/userphoto.png';
 
@@ -10,6 +11,7 @@ export default function FriendCard(props) {
         <div>{props?.name}</div>
         <div>{props?.username}</div>
       </div>
+      <Link href={`/payments/${props?.id}`}>Pay or Request</Link>
     </div>
   );
 }

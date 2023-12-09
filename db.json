@@ -1,12 +1,10 @@
 {
-  "primary-user": [
+  "users": [
     {
       "name": "Tori Franklin",
       "username": "@toripatricia",
       "id": "mainuser"
-    }
-  ],
-  "users": [
+    },
     {
       "name": "Aiden Clark",
       "username": "@clark-aiden25",
@@ -31,64 +29,152 @@
       "name": "Benjamin Hall",
       "username": "@ben-hall-1776",
       "id": "bh5"
-    }
-  ],
-
-  "payment-requests": [
-    {
-      "recipientId": "ac1",
-      "requesterId": "mainuser",
-      "amount": " $60.87",
-      "description": "wifi"
     },
     {
-      "recipientId": "mainuser",
-      "requesterId": "bh5",
-      "amount": " $60.87",
-      "description": "wifi"
+      "name": "Charlotte Moore",
+      "username": "@char_moore4",
+      "id": "cm6"
     },
     {
-      "recipientId": "aw3",
-      "requesterId": "mainuser",
-      "amount": " $60.87",
-      "description": "wifi"
+      "name": "Emma Miller",
+      "username": "@em_milla_101",
+      "id": "em7"
     },
     {
-      "recipientId": "mainuser",
-      "requesterId": "al2",
-      "amount": " $60.87",
-      "description": "wifi"
+      "name": "Ethan Taylor",
+      "username": "@ethan_taylor",
+      "id": "et8"
+    },
+    {
+      "name": "Harper Thomas",
+      "username": "@harpers_ferry",
+      "id": "ht9"
+    },
+    {
+      "name": "Isabella Martinez",
+      "username": "@izzy-martinez",
+      "id": "im10"
+    },
+    {
+      "name": "Liam Smith",
+      "username": "@lsmith865",
+      "id": "ls11"
+    },
+    {
+      "name": "Logan Garcia",
+      "username": "@mr-garcia",
+      "id": "lg12"
+    },
+    {
+      "name": "Lucas Wilson",
+      "username": "@not-luke-wilson",
+      "id": "lw13"
+    },
+    {
+      "name": "Mason Martin",
+      "username": "@mason-the-man",
+      "id": "mm14"
+    },
+    {
+      "name": "Mia Rogriguez",
+      "username": "@princess_mia_",
+      "id": "mr15"
+    },
+    {
+      "name": "Noah Brown",
+      "username": "@nonononoah1995_",
+      "id": "nb16"
+    },
+    {
+      "name": "Oliver Walker",
+      "username": "@itsme_oliver_",
+      "id": "ow17"
+    },
+    {
+      "name": "Olivia Johnson",
+      "username": "@liv_johnson85",
+      "id": "oj18"
+    },
+    {
+      "name": "Sophia Anderson",
+      "username": "@sophiedancer2",
+      "id": "sa19"
+    },
+    {
+      "name": "Theresa Williams",
+      "username": "@theresa-willy8",
+      "id": "tw20"
+    },
+    {
+      "name": "Wyatt Childress",
+      "username": "@wyatt-the-kid",
+      "id": "wc21"
     }
   ],
 
   "transactions": [
     {
-      "payerId": "mainuser",
-      "payerName": "Tori Franklin",
-      "payerUsername": "@toripatricia",
-      "amount": "-$45.63",
-      "description": "bday dinner"
+      "id": 0,
+      "from": "ac1",
+      "to": "mainuser",
+      "amount": "$750",
+      "description": "wifi",
+      "date": "11-01-2023",
+      "isPaid": true
     },
     {
-      "payerId": "ac1",
-      "payerName": "Aiden Clark",
-      "payerUsername": "@clark-aiden25",
-      "amount": "+$50",
-      "description": "electric bill"
+      "id": 1,
+      "from": "cm6",
+      "to": "mainuser",
+      "amount": "$12.18",
+      "description": "lunch",
+      "date": "10-29-2023",
+      "isPaid": true
     },
     {
-      "payerId": "mainuser",
-      "payerName": "Tori Franklin",
-      "payerUsername": "@toripatricia",
-      "amount": "-$12",
-      "description": "coffee"
+      "id": 2,
+      "from": "mainuser",
+      "to": "bh5",
+      "amount": "$65.27",
+      "description": "groceries",
+      "date": "10-24-2023",
+      "isPaid": true
     },
     {
-      "payerId": "bh5",
-      "payerName": "Benjamin Hall",
-      "payerUsername": "@ben-hall-1776",
-      "amount": "35",
-      "description": "drinks"
+      "id": 3,
+      "from": "mainuser",
+      "to": "lg12",
+      "amount": "$175",
+      "description": "photo session 10/24",
+      "date": "10-24-23",
+      "isPaid": true
+    },
+    {
+      "id": 4,
+      "from": "aw5",
+      "to": "mainuser",
+      "amount": "$45.62",
+      "description": "maincure",
+      "date": "10-15-23",
+      "isPaid": true
+    },
+    {
+      "id": 5,
+      "from": "wc21",
+      "to": "mainuser",
+      "amount": "$85",
+      "description": "babysitting 10-10",
+      "date": "10-10-23",
+      "isPaid": true
+    },
+    {
+      "id": 6,
+      "from": "mainuser",
+      "to": "im10",
+      "amount": "$25.82",
+      "description": "drinks",
+      "date": "10-05-23",
+      "isPaid": true
     }
   ]
 }
