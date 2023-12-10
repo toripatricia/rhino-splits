@@ -3,12 +3,16 @@
 import React from 'react';
 import Link from 'next/link';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import { useRouter } from 'next/router';
 
 export default function BottomNav() {
+  const router = useRouter();
   return (
     <div id="bottom-nav">
       <div id="top-rectangle">top</div>
-      <button id="pay-request">R$</button>
+      <button onClick={() => router.push('/friends')} id="pay-request">
+        R$
+      </button>
       <div id="bottom-rectangle">
         <div id="home-button">
           <Link passHref href="/">

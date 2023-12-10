@@ -10,7 +10,8 @@ export default function Friends() {
     const getUsers = async () => {
       try {
         const { data } = await httpClient.get('/users');
-        setUsers(data);
+        const filterUsers = data.filter((user) => user.id !== 'mainuser');
+        setUsers(filterUsers);
       } catch (error) {
         console.error('failed to fetch:', error);
       } finally {
