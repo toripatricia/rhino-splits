@@ -107,3 +107,21 @@ a {
   display: flex;
   justify-content: center;
 }
+
+#transaction-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#transaction-amount {
+  padding-left: 20px;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}

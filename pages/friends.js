@@ -10,8 +10,8 @@ export default function Friends() {
     const getUsers = async () => {
       try {
         const { data } = await httpClient.get('/users');
-        console.log({ data });
-        setUsers(data);
+        const filterUsers = data.filter((user) => user.id !== 'mainuser');
+        setUsers(filterUsers);
       } catch (error) {
         console.error('failed to fetch:', error);
       } finally {
@@ -27,7 +27,7 @@ export default function Friends() {
   return (
     <div>
       {users.map((user) => (
-        <FriendCard key={user.id} name={user.name} username={user.username} />
+        <FriendCard key={user.id} {...user} />
       ))}
     </div>
   );
