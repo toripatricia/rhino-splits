@@ -11,7 +11,9 @@ export default function FriendCard(props) {
         <div>{props?.name}</div>
         <div>{props?.username}</div>
       </div>
-      <Link href={`/payments/${props?.id}`}>Pay or Request</Link>
+      <div id="pay-button">
+        <Link href={`/payments/${props?.id}`}>Pay or Request</Link>
+      </div>
     </div>
   );
 }
