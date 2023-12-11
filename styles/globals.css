@@ -85,6 +85,10 @@ a {
   border-color: #5c7684;
 }
 
+#pay-button {
+  border: 50px;
+}
+
 #history-button {
   margin: 5px;
   background-color: #5c7684;
@@ -109,13 +113,19 @@ a {
 }
 
 #transaction-container {
+  padding-top: 10px;
+}
+
+#left-side {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 #transaction-amount {
-  padding-left: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
 }
 
 .green {
@@ -124,4 +134,30 @@ a {
 
 .red {
   color: red;
+}
+
+#calculator {
+  display: grid;
+  grid-template-columns: 8rem 8rem 8rem;
+  grid-gap: 1rem;
+  grid-auto-flow: row;
+  padding-top: 100px;
+}
+
+#payment-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+#recipient {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+#total {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
 }

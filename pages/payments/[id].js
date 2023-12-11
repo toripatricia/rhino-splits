@@ -64,10 +64,12 @@ export default function Payments() {
           </Button>
         </Modal.Footer>
       </Modal>
-      <p>Post: {user.name}</p>
+      <div id="recipient">
+        <p>To: {user.name}</p>
+      </div>
       <div id="total">${total}</div>
       <div id="payment-description">
-        <Form.Control value={descriptionValue} onChange={(event) => setDescriptionValue(event.target.value)} type="text" placeholder="Normal text" />
+        <Form.Control value={descriptionValue} onChange={(event) => setDescriptionValue(event.target.value)} type="text" placeholder="What's it for?" />
       </div>
       <div id="payment-buttons">
         <button

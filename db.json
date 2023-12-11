@@ -116,7 +116,7 @@
       "id": 0,
       "from": "ac1",
       "to": "mainuser",
-      "amount": "$750",
+      "amount": "750",
       "description": "wifi",
       "date": "11-01-2023",
       "isPaid": true
@@ -125,7 +125,7 @@
       "id": 1,
       "from": "cm6",
       "to": "mainuser",
-      "amount": "$12.18",
+      "amount": "12.18",
       "description": "lunch",
       "date": "10-29-2023",
       "isPaid": true
@@ -134,7 +134,7 @@
       "id": 2,
       "from": "mainuser",
       "to": "bh5",
-      "amount": "$65.27",
+      "amount": "65.27",
       "description": "groceries",
       "date": "10-24-2023",
       "isPaid": true
@@ -143,16 +143,16 @@
       "id": 3,
       "from": "mainuser",
       "to": "lg12",
-      "amount": "$175",
+      "amount": "175",
       "description": "photo session 10/24",
       "date": "10-24-23",
       "isPaid": true
     },
     {
       "id": 4,
-      "from": "aw5",
+      "from": "aw4",
       "to": "mainuser",
-      "amount": "$45.62",
+      "amount": "45.62",
       "description": "maincure",
       "date": "10-15-23",
       "isPaid": true
@@ -161,7 +161,7 @@
       "id": 5,
       "from": "wc21",
       "to": "mainuser",
-      "amount": "$85",
+      "amount": "85",
       "description": "babysitting 10-10",
       "date": "10-10-23",
       "isPaid": true
@@ -170,72 +170,18 @@
       "id": 6,
       "from": "mainuser",
       "to": "im10",
-      "amount": "$25.82",
+      "amount": "25.82",
       "description": "drinks",
       "date": "10-05-23",
       "isPaid": true
     },
     {
-      "id": 7421,
+      "id": 2535,
       "from": "mainuser",
-      "to": "ac1",
+      "to": "bh5",
       "amount": "100",
-      "description": "wifi",
-      "date": "2023-12-10T00:28:37.598Z",
-      "isPaid": true
-    },
-    {
-      "id": 4904,
-      "from": "mainuser",
-      "to": "ac1",
-      "amount": "100",
-      "description": "wifi",
-      "date": "2023-12-10T00:32:46.197Z",
-      "isPaid": true
-    },
-    {
-      "id": 1945,
-      "from": "mainuser",
-      "to": "ac1",
-      "amount": "100",
-      "description": "wifi",
-      "date": "2023-12-10T00:32:47.745Z",
-      "isPaid": true
-    },
-    {
-      "id": 1612,
-      "from": "mainuser",
-      "to": "ac1",
-      "amount": "100",
-      "description": "wifi",
-      "date": "2023-12-10T00:32:47.913Z",
-      "isPaid": true
-    },
-    {
-      "id": 8989,
-      "from": "mainuser",
-      "to": "ac1",
-      "amount": "100",
-      "description": "wifi",
-      "date": "2023-12-10T00:34:41.288Z",
-      "isPaid": false
-    },
-    {
-      "id": 7192,
-      "from": "mainuser",
-      "to": "ac1",
-      "amount": "55",
-      "description": "drinks",
-      "date": "2023-12-10T00:37:56.309Z",
-      "isPaid": true
-    },
-    {
-      "id": 5516,
-      "from": "mainuser",
-      "to": "ac1",
-      "amount": "600",
-      "description": "mortgage",
-      "date": "2023-12-10T00:41:27.466Z",
+      "description": "testing",
+      "date": "2023-12-11T06:37:21.408Z",
       "isPaid": false
     }
   ]
