@@ -15,7 +15,7 @@ export default function Payments() {
   const [descriptionValue, setDescriptionValue] = useState('');
   const [modalOpen, setModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [isPaying, setIsPaying] = useState();
+  const [type, setType] = useState();
   const [total, setTotal] = useState('');
   useEffect(() => {
     const getUser = async () => {
@@ -39,7 +39,8 @@ export default function Payments() {
       amount: total,
       description: descriptionValue,
       date: new Date().toISOString(),
-      isPaid: isPaying,
+      isPaid: type === 'payment' ? true : false,
+      type
     };
     console.log(transaction);
     await httpClient.post('/transactions', transaction);
@@ -51,7 +52,7 @@ export default function Payments() {
       <Modal show={modalOpen}>
         <Modal.Header>
           <Modal.Title>
-            Are you sure you want to {isPaying ? 'pay' : 'request'} {user.name} ${total} for {descriptionValue}?
+            Are you sure you want to {type === 'payment' ? 'pay' : 'request'} {user.name} ${total} for {descriptionValue}?
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>Rhonda</Modal.Body>
@@ -76,7 +77,7 @@ export default function Payments() {
           disabled={!total}
           onClick={() => {
             setModalOpen(true);
-            setIsPaying(true);
+            setType('payment');
           }}
         >
           Pay
@@ -85,7 +86,7 @@ export default function Payments() {
           disabled={!total}
           onClick={() => {
             setModalOpen(true);
-            setIsPaying(false);
+            setType('request');
           }}
         >
           Request

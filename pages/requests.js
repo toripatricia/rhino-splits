@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import httpClient from '../api/httpClient';
 import Loading from '../components/Loading';
-import TransactionCard from '../components/transactionCard';
+import RequestCard from '../components/requestCard';
 
 function combineTransactionsWithUsers(users, transactions) {
   const combinedTransactions = transactions
@@ -22,8 +22,14 @@ function combineTransactionsWithUsers(users, transactions) {
 
 export default function TransactionHistory() {
   const [transactions, setTransactions] = useState([]);
-
   const [isLoading, setIsLoading] = useState(true);
+  const [refresh, setRefresh] = useState();
+
+  const handleDelete = async (id) => {
+    await httpClient.delete(`/transactions/${id}`);
+    setRefresh(!refresh)
+  };
+
   useEffect(() => {
     const getTransactions = async () => {
       try {
@@ -38,14 +44,14 @@ export default function TransactionHistory() {
       }
     };
     getTransactions();
-  }, []);
+  }, [refresh]);
 
   if (isLoading) return <Loading />;
 
   return (
     <div>
       {transactions.map((transaction) => (
-        <TransactionCard key={transaction.id} date={transaction.date} from={transaction.from} to={transaction.to} description={transaction.description} amount={transaction.amount} />
+        <RequestCard key={transaction.id} date={transaction.date} from={transaction.from} to={transaction.to} description={transaction.description} amount={transaction.amount} id={transaction.id} handleDelete={handleDelete}/>
       ))}
     </div>
   );
