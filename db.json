@@ -191,6 +191,16 @@
       "date": "2023-12-11T23:56:11.839Z",
       "isPaid": true,
       "type": "payment"
+    },
+    {
+      "id": 1973,
+      "from": "mainuser",
+      "to": "ow17",
+      "amount": "40",
+      "description": "drinks",
+      "date": "2023-12-12T22:12:33.468Z",
+      "isPaid": false,
+      "type": "request"
     }
   ]
 }
