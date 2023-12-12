@@ -25,10 +25,10 @@ export default function Friends() {
   if (isLoading) return <Loading />;
 
   return (
-    <div>
+    <>
       {users.map((user) => (
         <FriendCard key={user.id} {...user} />
       ))}
-    </div>
+    </>
   );
 }
