@@ -117,7 +117,7 @@
       "from": "ac1",
       "to": "mainuser",
       "amount": "750",
-      "description": "wifi",
+      "description": "rent",
       "date": "11-01-2023",
       "isPaid": true,
       "type": "payment"
