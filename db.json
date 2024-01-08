@@ -193,14 +193,34 @@
       "type": "payment"
     },
     {
-      "id": 1973,
+      "id": 8005,
       "from": "mainuser",
-      "to": "ow17",
-      "amount": "40",
-      "description": "drinks",
-      "date": "2023-12-12T22:12:33.468Z",
+      "to": "et8",
+      "amount": "100",
+      "description": "tickets",
+      "date": "2023-12-13T01:04:33.092Z",
+      "isPaid": true,
+      "type": "payment"
+    },
+    {
+      "id": 2920,
+      "from": "mainuser",
+      "to": "lg12",
+      "amount": "100",
+      "description": "tickets",
+      "date": "2023-12-13T01:05:14.759Z",
       "isPaid": false,
       "type": "request"
+    },
+    {
+      "id": 1681,
+      "from": "mainuser",
+      "to": "et8",
+      "amount": "14",
+      "description": "drink",
+      "date": "2023-12-19T01:35:42.812Z",
+      "isPaid": true,
+      "type": "payment"
     }
   ]
 }
