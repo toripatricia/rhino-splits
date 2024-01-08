@@ -27,10 +27,10 @@ export default function Wallet() {
   }, []);
 
   function calculateTotalPayments(transactions) {
-    // Calculate total amount
     const totalAmount = transactions.reduce((total, transaction) => total + parseFloat(transaction.amount), 0);
 
-    return totalAmount.toFixed(2); // Return total amount formatted as a string with two decimal places
+    return totalAmount.toFixed(2); 
+    
   }
 
   if (isLoading) return <Loading />;
@@ -40,11 +40,11 @@ export default function Wallet() {
       <div id="wallet">
         <h1>Your Wallet</h1>
       </div>
-      <div id="wallet-total">{calculateTotalPayments(transactions)}</div>
+      <div id="wallet-total">${calculateTotalPayments(transactions)}</div>
 
-      <Button id="transfer-button" onClick={() => setModalOpen(true)}>
-        Transfer to bank
-      </Button>
+      <div id="transfer-button">
+        <Button id ="transfer" onClick={() => setModalOpen(true)}>Transfer to bank</Button>
+      </div>
 
       <Modal show={modalOpen}>
         <Modal.Header>
