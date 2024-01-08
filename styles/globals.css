@@ -64,9 +64,10 @@ a {
   font-size: 20px;
 }
 
-.friend-container {
+#friend-container {
   display: flex;
   flex-direction: row;
+  margin-bottom: 10px;
 }
 
 #nav-icons {
@@ -155,10 +156,38 @@ a {
   display: flex;
   justify-content: center;
   padding-bottom: 40px;
+  font-size: 30px;
 }
 
 #total {
   display: flex;
   justify-content: center;
   font-size: 30px;
+}
+
+#pay-button {
+  border: 2px solid;
+  border-radius: 10%;
+  height: 25px;
+  margin-top: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: #5c7684;
+  border-color: #5c7684;
+  color: #e5e1e1;
+}
+
+#button-container {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+#wallet-total {
+  display: flex;
+  justify-content: center;
+}
+
+#wallet {
+  display: flex;
+  justify-content: center;
 }

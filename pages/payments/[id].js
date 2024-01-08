@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Modal, Form } from 'react-bootstrap';
+import Image from 'next/image';
+import areyousure from '../../assets/areyousure.png';
 
 import Loading from '../../components/Loading';
 import httpClient from '../../api/httpClient';
@@ -17,6 +19,7 @@ export default function Payments() {
   const [isLoading, setIsLoading] = useState(true);
   const [type, setType] = useState();
   const [total, setTotal] = useState('');
+
   useEffect(() => {
     const getUser = async () => {
       try {
@@ -31,6 +34,7 @@ export default function Payments() {
 
     if (userId) getUser();
   }, [userId]);
+
   const handleSubmit = async () => {
     const transaction = {
       id: getRandomNumber(7, 9000),
@@ -40,13 +44,14 @@ export default function Payments() {
       description: descriptionValue,
       date: new Date().toISOString(),
       isPaid: type === 'payment' ? true : false,
-      type
+      type,
     };
-    console.log(transaction);
     await httpClient.post('/transactions', transaction);
     router.push('/confirmation');
   };
+
   if (isLoading) return <Loading />;
+
   return (
     <div>
       <Modal show={modalOpen}>
@@ -55,7 +60,9 @@ export default function Payments() {
             Are you sure you want to {type === 'payment' ? 'pay' : 'request'} {user.name} ${total} for {descriptionValue}?
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>Rhonda</Modal.Body>
+        <Modal.Body>
+          <Image src={areyousure} alt="rhonda" height="250px" width="500px" style={{ display: 'block', margin: 'auto' }} />
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={() => setModalOpen(false)}>
             Never mind
